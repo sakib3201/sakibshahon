@@ -1,3 +1,10 @@
+//code for cursor will go here
+
+
+
+
+
+//Code for navbar
         var card = document.getElementById('Activator');
         var tl = gsap.timeline({
           defaults: {

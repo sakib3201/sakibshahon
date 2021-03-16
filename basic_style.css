@@ -3,7 +3,7 @@ body {
 }
 
 #Home-page-name {
-  font-size: 8em;
+  font-size: 10em;
   color: #3cc1c9ff;
   text-align: center;
   align-content: center;
@@ -46,9 +46,34 @@ body {
   color: tomato;
   box-shadow: 0 .5em .5em -.5em;
   transition-timing-function: ease-out;
-  text-rendering: optimizeSpeed;
 }
 
+#cursor{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  transition: 0.1s;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  pointer-events: none;
+  background: white;
+  mix-blend-mode: difference;
+}
+.Homepage:hover ~ #cursor{
+  transition-timing-function:ease;
+  transform: scale(2);
+}
+.total-navbar:hover ~ #cursor{
+  background: tomato;
+  transform: scale(0);
+}
+.Grp-Button:hover ~ #cursor{
+  transition-duration: .25s;
+  transform: scale(0);
+  background: tomato;
+}
 @media screen and (max-width: 600px) {
   div.Homepage {
     font-size: 10px;
