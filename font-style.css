@@ -1,0 +1,205 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?kxyvmw');
+  src:  url('fonts/icomoon.eot?kxyvmw#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?kxyvmw') format('truetype'),
+    url('fonts/icomoon.woff?kxyvmw') format('woff'),
+    url('fonts/icomoon.svg?kxyvmw#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="custom-icon-"], [class*=" custom-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.custom-icon-logo-glyph:before {
+  content: "\e900";
+}
+.custom-icon-home:before {
+  content: "\e91e";
+}
+.custom-icon-newspaper:before {
+  content: "\e919";
+}
+.custom-icon-pencil2:before {
+  content: "\e91f";
+}
+.custom-icon-blog:before {
+  content: "\e91a";
+}
+.custom-icon-image:before {
+  content: "\e920";
+}
+.custom-icon-images:before {
+  content: "\e921";
+}
+.custom-icon-play:before {
+  content: "\e91b";
+}
+.custom-icon-books:before {
+  content: "\e924";
+}
+.custom-icon-profile:before {
+  content: "\e923";
+}
+.custom-icon-stack:before {
+  content: "\e92e";
+}
+.custom-icon-folder:before {
+  content: "\e92f";
+}
+.custom-icon-folder-open:before {
+  content: "\e930";
+}
+.custom-icon-qrcode:before {
+  content: "\e938";
+}
+.custom-icon-envelop:before {
+  content: "\e945";
+}
+.custom-icon-location2:before {
+  content: "\e948";
+}
+.custom-icon-user-tie:before {
+  content: "\e976";
+}
+.custom-icon-enlarge:before {
+  content: "\e989";
+}
+.custom-icon-equalizer:before {
+  content: "\e992";
+}
+.custom-icon-cog:before {
+  content: "\e994";
+}
+.custom-icon-bug:before {
+  content: "\e999";
+}
+.custom-icon-stats-dots:before {
+  content: "\e99b";
+}
+.custom-icon-trophy:before {
+  content: "\e99e";
+}
+.custom-icon-mug:before {
+  content: "\e9a2";
+}
+.custom-icon-briefcase:before {
+  content: "\e9ae";
+}
+.custom-icon-list2:before {
+  content: "\e9bb";
+}
+.custom-icon-tree:before {
+  content: "\e9bc";
+}
+.custom-icon-menu:before {
+  content: "\e9bd";
+}
+.custom-icon-cloud-download:before {
+  content: "\e9c2";
+}
+.custom-icon-cloud-check:before {
+  content: "\e9c4";
+}
+.custom-icon-link:before {
+  content: "\e9cb";
+}
+.custom-icon-bookmarks:before {
+  content: "\e9d3";
+}
+.custom-icon-contrast:before {
+  content: "\e9d5";
+}
+.custom-icon-circle-up:before {
+  content: "\ea41";
+}
+.custom-icon-circle-right:before {
+  content: "\ea42";
+}
+.custom-icon-circle-down:before {
+  content: "\ea43";
+}
+.custom-icon-circle-left:before {
+  content: "\ea44";
+}
+.custom-icon-paragraph-left:before {
+  content: "\ea77";
+}
+.custom-icon-share2:before {
+  content: "\ea82";
+}
+.custom-icon-mail3:before {
+  content: "\ea85";
+}
+.custom-icon-google-drive:before {
+  content: "\ea8f";
+}
+.custom-icon-facebook2:before {
+  content: "\ea91";
+}
+.custom-icon-instagram:before {
+  content: "\ea92";
+}
+.custom-icon-whatsapp:before {
+  content: "\ea93";
+}
+.custom-icon-twitter:before {
+  content: "\ea96";
+}
+.custom-icon-github:before {
+  content: "\eab0";
+}
+.custom-icon-wordpress:before {
+  content: "\eab4";
+}
+.custom-icon-android:before {
+  content: "\eac0";
+}
+.custom-icon-linkedin:before {
+  content: "\eac9";
+}
+.custom-icon-stackoverflow:before {
+  content: "\ead0";
+}
+.custom-icon-chrome:before {
+  content: "\ead9";
+}
+.custom-icon-firefox:before {
+  content: "\eada";
+}
+.custom-icon-edge:before {
+  content: "\eadc";
+}
+.custom-icon-file-pdf:before {
+  content: "\eadf";
+}
+.custom-icon-html-five:before {
+  content: "\eae4";
+}
+.custom-icon-git:before {
+  content: "\eae7";
+}

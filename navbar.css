@@ -1,0 +1,60 @@
+/* everything below this is strictly for the navbar*/
+.total-navbar {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-icon-menu {
+  color: black;
+  text-transform: translateY(10px);
+  padding: 1em;
+  border-radius: 100%;
+  cursor: pointer;
+  display: block;
+  display: : flex;
+  background: #3cc1c9ff;
+}
+
+.custom-icon-menu:hover {
+  color: black;
+  background: #3cc1c9ff;
+}
+
+nav {
+  align-self: auto;
+  background: #2e2e2eff;
+  border-radius: 0 5em 5em 0;
+  padding: .5em;
+  clip-path: ellipse(50% 50% at -50% 50%);
+  background-color: rgb(50, 56, 68);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  font-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  display: flex;
+  padding: .25em;
+  margin: .25em;
+  border-radius: 50%;
+  transition: background-color .3s;
+  text-decoration: none;
+  color: #3cc1c9ff;
+
+}
+
+nav ul li a:hover {
+  background-color: rgb(50, 56, 68);
+  color: tomato;
+}
+
+nav ul li a i {
+  opacity: 0;
+  transform: translateX(-10px);
+}

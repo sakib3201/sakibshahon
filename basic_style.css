@@ -1,0 +1,57 @@
+body {
+  background-color: #2e2e2eff;
+}
+
+#Home-page-name {
+  font-size: 8em;
+  color: #3cc1c9ff;
+  text-align: center;
+  align-content: center;
+  vertical-align: middle;
+  overflow: hidden;
+  display: flex;
+}
+
+#Home-page-title {
+  letter-spacing: 1em;
+  display: block;
+  font-size: 2em;
+  color: tomato;
+  text-align: center;
+  align-content: center;
+}
+.Grp-Button{
+  display: block;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-between;
+}
+.Grp-Button Button {
+  width: 20%;
+  color: #3c949cff;
+  background: none;
+  border: 2px solid #3c949cff;
+  padding: .5em .5em;
+  margin-top: 1.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: 1em;
+  transition-delay: 1s;
+  transition: color .5s, border-color .5s, box-shadow .5s;
+  outline-style: none;
+}
+
+.Grp-Button Button:hover {
+  border-color: tomato;
+  color: tomato;
+  box-shadow: 0 .5em .5em -.5em;
+  transition-timing-function: ease-out;
+  text-rendering: optimizeSpeed;
+}
+
+@media screen and (max-width: 600px) {
+  div.Homepage {
+    font-size: 10px;
+    }
+
+}
