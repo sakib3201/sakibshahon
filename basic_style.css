@@ -1,10 +1,17 @@
 body {
   background-color: #2e2e2eff;
+  cursor: none;
 }
-.Outer-homepage{
+
+.Outer-homepage {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: none;
+}
+
+.Main-menu:hover {
+  cursor: pointer;
 }
 
 #Home-page-name {
@@ -14,36 +21,55 @@ body {
   text-align: center;
   overflow: hidden;
   margin: 0 auto;
-  max-width: 75%;
+  padding: 0 auto;
+  max-width: 80%;
+  cursor: none;
+  font-family: serif;
+  opacity: 1;
 }
 
 #Home-page-title {
-  max-width: 75%;
   letter-spacing: 1em;
-  font-size: 2em;
+  font-size: 1.2em;
   color: tomato;
   text-align: center;
   align-content: center;
   justify-content: center;
+  padding: 1em;
   margin: 0 auto;
+  max-width: 60%;
+  cursor: none;
 }
-.Grp-Button{
+#personal-description{
+  font-size: 2em;
+  color:lightyellow;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  margin: 5px auto;
+  max-width: 100%;
+  cursor: none;
+  opacity: .75;
+}
+
+.Grp-Button {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-content: space-between;
   justify-content: center;
 }
+
 .Grp-Button Button {
   width: 20%;
-  color: #3c949cff;
+  color: #3cc1c9ff;
   background: none;
-  border: 2px solid #3c949cff;
+  border: 2px ridge #3cc1c9ff;
   padding: .5em .5em;
   margin-top: 1.5em;
   margin-left: 1em;
   margin-right: 1em;
-  font-size: 1em;
+  font-size: 1.2em;
   transition-delay: 1s;
   transition: color .5s, border-color .5s, box-shadow .5s;
   outline-style: none;
@@ -54,8 +80,11 @@ body {
   border-color: tomato;
   color: tomato;
   box-shadow: 0 .5em .5em -.5em;
+  border: 2px solid tomato;
   transition-timing-function: ease-out;
+  cursor: pointer;
 }
+
 .Grp-Button Button:focus {
   border-color: tomato;
   color: tomato;
@@ -63,47 +92,78 @@ body {
   transition-timing-function: ease-out;
 }
 
-#cursor{
+#cursor {
   position: absolute;
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  border: 1px solid #000000;
+  width: 15px;
+  height: 15px;
+  border: 3px solid white;
   box-sizing: border-box;
   transition: 0.1s;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   pointer-events: none;
   background: white;
   mix-blend-mode: difference;
 }
-#Home-page-name:hover ~ #cursor{
-  transform: scale(75);
-  transition-timing-function:ease;
-}
-#Home-page-title:hover ~ #cursor{
-  transition-timing-function:ease;
-  transform: scale(35);
+
+#Home-page-name:hover~#cursor {
+  transform: scale(10);
+  transition-timing-function: ease;
   border-radius: 50%;
 }
+
+#Home-page-title:hover~#cursor {
+  transition-timing-function: ease;
+  transform: scale(2);
+  border-color: ivory;
+  background: ivory;
+  mix-blend-mode: exclusion;
+}
+#Home-page-title:hover{
+  opacity: 1;
+}
+#personal-description:hover{
+  opacity: 1;
+}
+#personal-description:hover~#cursor {
+  transform: scale(5);
+  transition-timing-function: ease;
+  border-color: purple;
+  background: purple;
+  mix-blend-mode:soft-light;
+}
+/* Experimental part */
 
 
 
 /*The below part is for making it mobile responsive*/
+/*768 px is the typical size of tabs*/
+@media screen and (max-width: 800px) {
+  #cursor {
+    display: none;
+  }
+}
+
+/* 600 px is about the size of lagrge phones*/
 @media screen and (max-width: 600px) {
-  #Home-page-name{
+  #Home-page-name {
     font-size: 5em;
     max-width: 100%;
   }
+
   #Home-page-title {
     letter-spacing: .2em;
     max-width: 100%;
   }
-  #cursor{
+
+  #cursor {
     display: none;
   }
+
   .Grp-Button Button {
-    margin: 1px;
-    margin-top: 5px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding: 5px;
+    max-width: 100px;
   }
 }
