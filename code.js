@@ -1,8 +1,10 @@
 //code for cursor will go here
 
-
-
-
+const cursor = document.getElementById('cursor');
+document.addEventListener('mousemove',(e)=>{
+  cursor.style.left = e.pageX + 'px';
+  cursor.style.top = e.pageY + 'px';
+})
 
 //Code for navbar
         var card = document.getElementById('Activator');
@@ -13,7 +15,6 @@
         })
 
         var toggle = false;
-
         tl.to('.custom-icon-menu', {
           background: 'tomato', //'#3cc1c9ff' #805ad5
           'borderRadius': '5em 0 0 5em'
