@@ -3,6 +3,7 @@
   display: flex;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
 
 .custom-icon-menu {
@@ -17,7 +18,7 @@
 }
 
 .custom-icon-menu:hover {
-  color: black;
+  color: white;
   background: #3cc1c9ff;
 }
 
@@ -46,14 +47,16 @@ nav ul li a {
   transition: background-color .3s;
   text-decoration: none;
   color: #3cc1c9ff;
-
 }
 
 nav ul li a:hover {
-  background-color: rgb(50, 56, 68);
-  color: tomato;
+  background-color: black; /*rgb(50, 56, 68);*/
+  color: #3cc1c9ff;
 }
-
+nav ul li a:active {
+  background-color: black; /*rgb(50, 56, 68);*/
+  color: #3cc1c9ff;
+}
 nav ul li a i {
   opacity: 0;
   transform: translateX(-10px);

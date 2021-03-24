@@ -11,7 +11,7 @@ body {
 }
 
 .Main-menu:hover {
-  cursor: pointer;
+  cursor: none;
 }
 
 #Home-page-name {
@@ -84,7 +84,6 @@ body {
   transition-timing-function: ease-out;
   cursor: pointer;
 }
-
 .Grp-Button Button:focus {
   border-color: tomato;
   color: tomato;
