@@ -1,0 +1,32 @@
+body {
+  background-color: #2e2e2eff;
+}
+
+h1 {
+  align-self: center;
+  text-align: center;
+  color: lightskyblue;
+}
+.all-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skill-card {
+  font-size: large;
+  min-width: 40%;
+  padding: 10px;
+  margin: 10px;
+  border: 4px solid #3cc1c9ff;
+  color: darkgray;
+}
+.skill-card h3 {
+  font-size: 2em;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  border-bottom: 4px solid #3cc1c9ff;
+  color: rgb(172, 164, 164);
+}

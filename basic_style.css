@@ -40,16 +40,16 @@ body {
   max-width: 60%;
   cursor: none;
 }
-#personal-description{
+#personal-description {
   font-size: 2em;
-  color:lightyellow;
+  color: lightyellow;
   text-align: center;
   align-content: center;
   justify-content: center;
   margin: 5px auto;
   max-width: 100%;
   cursor: none;
-  opacity: .75;
+  opacity: 0.75;
 }
 
 .Grp-Button {
@@ -65,13 +65,13 @@ body {
   color: #3cc1c9ff;
   background: none;
   border: 2px ridge #3cc1c9ff;
-  padding: .5em .5em;
+  padding: 0.5em 0.5em;
   margin-top: 1.5em;
   margin-left: 1em;
   margin-right: 1em;
   font-size: 1.2em;
   transition-delay: 1s;
-  transition: color .5s, border-color .5s, box-shadow .5s;
+  transition: color 0.5s, border-color 0.5s, box-shadow 0.5s;
   outline-style: none;
   flex-grow: 1;
 }
@@ -79,7 +79,7 @@ body {
 .Grp-Button Button:hover {
   border-color: tomato;
   color: tomato;
-  box-shadow: 0 .5em .5em -.5em;
+  box-shadow: 0 0.5em 0.5em -0.5em;
   border: 2px solid tomato;
   transition-timing-function: ease-out;
   cursor: pointer;
@@ -87,7 +87,7 @@ body {
 .Grp-Button Button:focus {
   border-color: tomato;
   color: tomato;
-  box-shadow: 0 .5em .5em -.5em;
+  box-shadow: 0 0.5em 0.5em -0.5em;
   transition-timing-function: ease-out;
 }
 
@@ -105,35 +105,33 @@ body {
   mix-blend-mode: difference;
 }
 
-#Home-page-name:hover~#cursor {
+#Home-page-name:hover ~ #cursor {
   transform: scale(10);
   transition-timing-function: ease;
   border-radius: 50%;
 }
 
-#Home-page-title:hover~#cursor {
+#Home-page-title:hover ~ #cursor {
   transition-timing-function: ease;
   transform: scale(2);
   border-color: ivory;
   background: ivory;
   mix-blend-mode: exclusion;
 }
-#Home-page-title:hover{
+#Home-page-title:hover {
   opacity: 1;
 }
-#personal-description:hover{
+#personal-description:hover {
   opacity: 1;
 }
-#personal-description:hover~#cursor {
+#personal-description:hover ~ #cursor {
   transform: scale(5);
   transition-timing-function: ease;
   border-color: purple;
   background: purple;
-  mix-blend-mode:soft-light;
+  mix-blend-mode: soft-light;
 }
 /* Experimental part */
-
-
 
 /*The below part is for making it mobile responsive*/
 /*768 px is the typical size of tabs*/
@@ -151,7 +149,7 @@ body {
   }
 
   #Home-page-title {
-    letter-spacing: .2em;
+    letter-spacing: 0.2em;
     max-width: 100%;
   }
 
