@@ -1,5 +1,5 @@
 body {
-  background-color: #2e2e2eff;
+  background-color: rgb(29, 29, 29);
   cursor: none;
 }
 
@@ -15,31 +15,21 @@ body {
 }
 
 #Home-page-name {
-  font-size: 10em;
+  font-size: 9em;
   color: #3cc1c9ff;
   justify-content: center;
   text-align: center;
   overflow: hidden;
   margin: 0 auto;
   padding: 0 auto;
-  max-width: 80%;
+  max-width: 100%;
   cursor: none;
-  font-family: serif;
+  text-shadow: 2px 2px 2px crimson;
+  font-family:'Cinzel Decorative','Times New Roman', Times, serif;
   opacity: 1;
 }
 
-#Home-page-title {
-  letter-spacing: 1em;
-  font-size: 1.2em;
-  color: tomato;
-  text-align: center;
-  align-content: center;
-  justify-content: center;
-  padding: 1em;
-  margin: 0 auto;
-  max-width: 60%;
-  cursor: none;
-}
+
 #personal-description {
   font-size: 2em;
   color: lightyellow;
@@ -74,6 +64,7 @@ body {
   transition: color 0.5s, border-color 0.5s, box-shadow 0.5s;
   outline-style: none;
   flex-grow: 1;
+  
 }
 
 .Grp-Button Button:hover {
@@ -93,9 +84,9 @@ body {
 
 #cursor {
   position: absolute;
-  width: 15px;
-  height: 15px;
-  border: 3px solid white;
+  width: 18px;
+  height: 18px;
+  border: 3px solid slategray;
   box-sizing: border-box;
   transition: 0.1s;
   transform: translate(-50%, -50%);
@@ -103,6 +94,20 @@ body {
   pointer-events: none;
   background: white;
   mix-blend-mode: difference;
+}
+#cursor::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  
+  width: 15px;
+  height: 5px;
+  background-color: slategray;
+  border-radius: 0 7.5px 7.5px 0;
+  mix-blend-mode: inclusion;
+  transform-origin: -35% 35%;
+  transform: translateX(100%) rotate(135deg);
 }
 
 #Home-page-name:hover ~ #cursor {
@@ -124,18 +129,21 @@ body {
 #personal-description:hover {
   opacity: 1;
 }
+
 #personal-description:hover ~ #cursor {
   transform: scale(5);
   transition-timing-function: ease;
-  border-color: purple;
-  background: purple;
-  mix-blend-mode: soft-light;
+  
 }
 /* Experimental part */
 
 /*The below part is for making it mobile responsive*/
 /*768 px is the typical size of tabs*/
 @media screen and (max-width: 800px) {
+  #Home-page-name {
+    font-size: 7em;
+    max-width: 100%;
+  }
   #cursor {
     display: none;
   }
@@ -144,7 +152,7 @@ body {
 /* 600 px is about the size of lagrge phones*/
 @media screen and (max-width: 600px) {
   #Home-page-name {
-    font-size: 5em;
+    font-size: 4em;
     max-width: 100%;
   }
 
