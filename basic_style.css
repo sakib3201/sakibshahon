@@ -14,7 +14,7 @@ body {
   cursor: none;
 }
 
-#Home-page-name {
+.Home-page-name {
   font-size: 9em;
   color: #3cc1c9ff;
   justify-content: center;
@@ -110,7 +110,7 @@ body {
   transform: translateX(100%) rotate(135deg);
 }
 
-#Home-page-name:hover ~ #cursor {
+.Home-page-name:hover ~ #cursor {
   transform: scale(10);
   transition-timing-function: ease;
   border-radius: 50%;
@@ -138,9 +138,10 @@ body {
 /* Experimental part */
 
 /*The below part is for making it mobile responsive*/
+
 /*768 px is the typical size of tabs*/
 @media screen and (max-width: 800px) {
-  #Home-page-name {
+  .Home-page-name {
     font-size: 7em;
     max-width: 100%;
   }
@@ -151,7 +152,7 @@ body {
 
 /* 600 px is about the size of lagrge phones*/
 @media screen and (max-width: 600px) {
-  #Home-page-name {
+  .Home-page-name {
     font-size: 4em;
     max-width: 100%;
   }

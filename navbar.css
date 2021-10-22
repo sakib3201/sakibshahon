@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   cursor: pointer;
+  max-width:10%;
 }
 
 .custom-icon-menu {

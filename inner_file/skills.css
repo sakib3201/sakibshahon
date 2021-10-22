@@ -41,8 +41,24 @@ h1 {
   text-overflow: clip;
 }
 
+/*For making the site responsive */
+@media screen and (max-width: 768px) {
+  h1{
+    font-size:3em;
+  }
+  .skill-card{
+    max-width: 30%;
+  }  
+}
+
 @media screen and (max-width: 600px) {
+  h1{
+    font-size: 2em;
+  }
+  .skill-card{
+    max-width: 90%;
+  }
   .skill-card h3{
-    font-size:1.5em;
+    font-size:1em;
   }
 }
